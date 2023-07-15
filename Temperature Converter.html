@@ -1,27 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Temperature Convereter</title>
-    <link rel="stylesheet" href="style.css" />
-    <script src="scripts.js"></script>
-  </head>
-  <body>
-    <div id="title">
-      <h1>Temperature Converter</h1>
-      <form action="">
-      <fieldset>
-        <legend>Temperature Input</legend>
-        <label for="fahrenheit " id="fahrenheit ">Fahrenheit:</label>
-        <input type="number" id="fahrenheit" placeholder="Enter temperature in Fahrenheit" />
-        <label for="celcius" id="celcius">Celcius:</label>
-        <input type="number" id="celcius" placeholder="Enter temperature in Celsius"/>
-        <button id="convert"class="btn" type="submit">Convert</button>
-        <button id="reset" class="btn" type="reset">Reset</button>
-        </fieldset>
-        <div id="result"></div>
-      </form>
+<html>
+<head>
+  <title>Temperature Convereter</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+  <h1>Temperature Converter</h1>
+  <div class="container">
+    <label for="celsius">Celsius</label>
+    <input type="number" id="celsius" placeholder="Enter temperature in Celsius">
+
+    <label for="fahrenheit">Fahrenheit</label>
+    <input type="number" id="fahrenheit" placeholder="Enter temperature in Fahrenheit">
+
+    <input type="submit" value="Convert" onclick="convertTemperatures()">
+    <input type="button" value="Reset" onclick="resetForm()">
+
+    <div class="result">
+      <p id="resultText"></p>
     </div>
-  </body>
+  </div>
+</body>
 </html>
